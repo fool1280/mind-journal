@@ -1,0 +1,9 @@
+steps:
+- name: "gcr.io/cloud-builders/gcloud"
+  entrypoint: "bash"
+  args:
+  - "-c"
+  - |-
+          cd ./mind-journal/client
+          gcloud app deploy
+timeout: "1600s"
