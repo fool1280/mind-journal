@@ -7,14 +7,19 @@ function App() {
   return (
 
     <Router>
-      <div className='container'>
-      <Navbar/>
-      <Home/>
-        {/* <main className='main'>
-          <h1 className='title'>
-            Welcome to <a href='#'>Mind Journal!</a>
-          </h1>
-        </main> */}
+      <div>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+
+          {/* <main className='main'>
+            <h1 className='title'>
+              Welcome to <a href='#'>Mind Journal!</a>
+            </h1>
+          </main> */}
       </div>
     </Router>
   );
