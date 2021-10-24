@@ -106,7 +106,7 @@ DATABASES = {
         'NAME': 'mind-journal',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-                'host': os.environ['MONGODB_URI']
+                'host': MONGODB_URI
         }
     }
 }
