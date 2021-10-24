@@ -3,8 +3,11 @@ from datetime import datetime, timedelta
 from google.cloud import language_v1
 from google.cloud.language_v1.types.language_service import Sentiment
 from .models import Mood
-from mindjournal.settings import STATIC_ROOT
+from mindjournal.settings import STATIC_ROOT, ACCOUNT_SID, AUTH_TOKEN
+from twilio.rest import Client
+from datetime import datetime
 import json
+import os
 
 
 def get_sentiment(text_content):
@@ -45,6 +48,18 @@ def post(request):
         pub_date = data['pub_date']
         Mood.objects.create(text=text, mood_self_grade=mood_self_grade,
                             pub_date=pub_date, sentiment=sentiment)
+        now = datetime.now()
+        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+        print(ACCOUNT_SID, AUTH_TOKEN)
+        print("date and time =", dt_string)
+        client = Client('ACd79c6a204249ff859c65ace6bb1cf1a6',
+                        '173c160353fbaebc3374949068b98b34')
+        message = client.messages \
+            .create(
+                body="Thank you for logging your thoughts today! You're amazing! at " + dt_string,
+                from_='+14174572955',
+                to='+16178747285'
+            )
         if sentiment < -0.25:
             mood = Mood.objects.filter(
                 sentiment__gte=0.5, pub_date__gte=datetime.now()-timedelta(days=60)).order_by('-mood_self_grade', '-pub_date')[:3].values()

@@ -12,6 +12,14 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
+ACCOUNT_SID = os.environ['TWILIO_ACCOUNT_SID']
+AUTH_TOKEN = os.environ['TWILIO_AUTH_TOKEN']
+MONGODB_URI = os.environ['MONGODB_URI']
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -92,7 +100,7 @@ DATABASES = {
         'NAME': 'mind-journal',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-                'host': 'mongodb+srv://anh:12345@cluster0.qaxvq.mongodb.net/mind-journal?retryWrites=true&w=majority'
+                'host': os.environ['MONGODB_URI']
         }
     }
 }
