@@ -1,24 +1,28 @@
-import { Element } from 'react-scroll'
+import { Element } from "react-scroll";
 
 const Home = () => {
-
-    return ( 
+    return (
         <div className="container">
             {/*modal section*/}
             <section className="home">
                 <div class="hero-section">
                     <div class="hero-1">
                         <h1 class="hero-title">
-                            Capture your thoughts/emotions frictionlessly!<span className="dot">.</span>
+                            Capture your thoughts/emotions frictionlessly!
+                            <span className="dot">.</span>
                         </h1>
                         <p class="hero-paragraph">
-                            M-J is a comprehensive tool that empowers people to practice deliberate mindfulness and boost vibes by sending users good memories regularly.
+                            M-J is a comprehensive tool that empowers people to
+                            practice deliberate mindfulness and boost vibes by
+                            sending users good memories regularly.
                         </p>
-                        <p>okay, cool but why should i care about recording my thoughts? here's why</p>
-
+                        <p>
+                            okay, cool but why should i care about recording my
+                            thoughts? here's why
+                        </p>
                     </div>
                     <div class="hero-illustration">
-                        <img src={"/illustration-1.png"} alt="ddd"/>
+                        <img src={"/illustration-1.png"} alt="ddd" />
                     </div>
                 </div>
             </section>
@@ -26,10 +30,6 @@ const Home = () => {
             {/* add "how-it-works" section*/}
             {/* add "features" section*/}
             {/* add FAQ section */}
-
-
-
-
 
             {/*---------- tried doing something but it didn't work *----------/}
 
@@ -43,7 +43,7 @@ const Home = () => {
             </section> 
             </Element> */}
         </div>
-     );
-}
- 
+    );
+};
+
 export default Home;
