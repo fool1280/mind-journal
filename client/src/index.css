@@ -15,8 +15,7 @@ body{
   color: rgb(0, 0, 0);
   /* background-color: rgb(4, 4, 4);
   background-image: linear-gradient(170deg, #010202, #050505, rgb(7, 7, 11)); */
-
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   /* background-image: linear-gradient(180deg, #ffffff, #050505, rgb(10, 9, 18)); */
   height: 100%;
   width: 100%;
@@ -25,6 +24,11 @@ body{
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
 }
 
 /* navigations */
@@ -46,8 +50,8 @@ code {
 
 .navbar.active{
   border-bottom: 1px solid #202020;
-  background-color: rgb(4, 4, 4);
-  background-image: linear-gradient(0deg, #000000, #050505, rgb(10, 10, 12));
+  background-color: rgb(233, 233, 233);
+  /* background-image: linear-gradient(0deg, #767676, #969696, rgb(130, 130, 130)); */
 
 }
 
@@ -104,7 +108,7 @@ code {
 
 .sign-in:hover{
   color: #ffffff;
-  background-color: #f1b503;
+  background-color: #336785;;
   /* background-image: linear-gradient(20deg, #1f1e1e, #005587, grey); */
   background-size: 100%;
  
@@ -114,7 +118,7 @@ code {
 section{
   min-height: 95vh;
   height: auto;
-  padding: 50px;
+  padding: 20px;
   /* background-color: rgb(4, 4, 4); */
 }
 
@@ -138,19 +142,20 @@ div.hero-section{
 }
 .hero-illustration img{
   object-fit: cover;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero-1 .hero-title{
-  font-size: 75px;
-  padding: 25px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  padding: 50px 0;
 }
 span.dot{
-  color: #f1b503;
+  color: #336785;
   font-weight: 900;
   /* padding-left: 5px; */
   /* font-size: 50px; */
