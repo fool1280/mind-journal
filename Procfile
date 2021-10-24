@@ -1,1 +1,1 @@
-web: gunicorn MindJournal.wsgi
+web: gunicorn mindjournal.wsgi
