@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mind-journal-329918",
+  "private_key_id": "9b03e0d1695273dfdcbeba4a5b6a3cf838217447",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDgYe7+lcEJVCXa\n2KfswGtA/w0/NS3BNh/79R+Gk8g8XFSWq5+D8tCYFw/GxgO41OaJtbHMWmCaA11I\n79yWyrtCnSAh9FWp7+RFGNXh7vwEEiWjQtUMCiiXIyBcHCPfx12pXYEkLg9S1pcd\nseBan9eLzmmU7Sa/ydgaj2aSAAMLkjqgJYlroYKtbJRmRRShT/Rpr9l8REkSYJoz\nz4INue1QxAvAL6hW3Fy/DQnyPVp2EdxxDTWkvkRPQN3rpLL6TlQ45xAyggOogBes\nY3eVAx+vzvbaBrXL9bpyqskPeWxtLraqjNVwYz2YswuYijvUpid3+k+7iasxX/i0\nHDcg+hWNAgMBAAECggEAB5PfG5tol71PAvdGooT0Ck+ivaP43dnLVjm2vReAD2PJ\n2oXEvxLD7yL2Pi8BQKx19agcb0uNEB51d8lb8H67uLnwNB1ZiEHo+llmnbjxq1yG\nh18yLTQpn0MJLHspzfygYeAdxKBGlbRYCaFwc3cK8zZ/E8+3e4ogQXNe0ibsc2dG\nXlweUxcau/lF5npOfmUFt3X0/13Ep/S3mmfa/z0ZN6Z0UPYC0FYedZh6uILLb8Hs\nZ6GdbiZrF2lDYhZskrpU3hZD5J5RhrbEdD6JJHoFcgFRha5SkbQ4IRxaPaTr/HWY\nXxDKtQA/XJlANrxYJwU14baaeKK3zfzvRFzz7gJySQKBgQD50ssRljadQXoPxO5c\nw+AN9TrK+3qsonRocNR4YQ5PCvjV9XMNupJbZVvM3SXhPOU1gQM0GGMqp77K+cZZ\nrC8ScgbbPePkmVkAmPXT4WLzLkzHqo/1bjcdKtbhy1HGr6D1T9+ggBVdj89SQlGZ\nezm0RIwX98Fhs9nKic88jCZcRQKBgQDl7h4Y9mt3RMsPsNfVtnSZzG5LgkoV62IF\n96v2M9/CnwLSJ5RZVYmd6OUqWG/gzA8NLlLPsa0NH8ooiLETVoTb/9OSkpC+u9an\nOXvhLWALp0Wv86cv3bnGkH9lmpjezpOHgInllg9uS0T2uobWh+E6KC8DbT3XL//j\n7i+uY9s8qQKBgQDiBoNPsBZNhNYIumXmbBmkx0CgMZK16m1jqOGy4Czv+r9T5TRp\nMWoFYtkBqvwAovXFyKm7Um02RHpsbju1GgGksKHfbklnpA5QahPP1VWPK06wP3Lr\n3QHkU8QCmc+s8W2xRMjRD9FEyz4J8JKfSEvW+0W80Z2W5f+gLbrfzvVN+QKBgDsk\nIVe4YnH+HuD9UrbkxF8e5yvC6n1y2va/+tpMA30S223kwlKsHsagNfnLX5OJyUFR\nrflAMUvT5nLAnhNkSK4xwmDMFDELLa47qfKEclTtBI66dEFqnbNGTY570mBU8DuF\nQ3LrQzLSZ32zAqXBs5v65ATUn3hvHzmodVk81BJpAoGBAPBpI6PPfRGudR0seN4t\n9nlYXZOyROKzNdM7TSE59/5tk3hG+zJ/ucij64eazpN2hTWxj0lodYocbcnKyqTu\nmrPtndNhXzYz/JI9uZN7ZttVE0vj+85CVWwjL736G02T1/47M4DPIQcnBXCncHxQ\nrn/Sp+TWklh4tqL9149WYW1k\n-----END PRIVATE KEY-----\n",
+  "client_email": "anh-868@mind-journal-329918.iam.gserviceaccount.com",
+  "client_id": "106870374773717981681",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/anh-868%40mind-journal-329918.iam.gserviceaccount.com"
+}
