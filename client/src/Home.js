@@ -15,7 +15,6 @@ const Home = () => {
                             M-J is a comprehensive tool that empowers people to practice deliberate mindfulness and boost vibes by sending users good memories regularly.
                         </p>
                         <p>okay, cool but why should i care about recording my thoughts? here's why</p>
-                        {/* <div className="sign-in">Claim a Plot</div> */}
 
                     </div>
                     <div class="hero-illustration">
@@ -33,7 +32,7 @@ const Home = () => {
 
 
             {/*---------- tried doing something but it didn't work *----------/}
-            
+
             {/* <Element id='how-iw' name='example-destination'>
             // wrap your content in the Element from react-scroll
             <section id="how-iw">
