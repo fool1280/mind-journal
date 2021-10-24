@@ -1,5 +1,7 @@
 from django.http import JsonResponse
+from datetime import datetime, timedelta
 from google.cloud import language_v1
+from google.cloud.language_v1.types.language_service import Sentiment
 from .models import Mood
 import json
 
@@ -24,6 +26,15 @@ def index(request):
     return JsonResponse({'data': list(all_moods)}, status=200)
 
 
+def get(request):
+    if request.method == 'GET':
+        mood = Mood.objects.filter(
+            sentiment__gte=0.5, pub_date__gte=datetime.now()-timedelta(days=60)).order_by('-mood_self_grade', '-pub_date')[:30].values()
+        return JsonResponse({'data': list(mood)}, status=200)
+    else:
+        return JsonResponse({'data': 'fail'}, status=400)
+
+
 def post(request):
     if request.method == 'POST':
         data = json.loads(request.body)
@@ -37,6 +48,7 @@ def post(request):
         return JsonResponse({'data': 'success'}, status=200)
     else:
         return JsonResponse({'data': 'fail'}, status=400)
+
 # def detail(request, user_id):
 #     all_moods = Mood.objects.filter(user_id=user_id).values()
 #     return JsonResponse({'data': list(all_moods)})
