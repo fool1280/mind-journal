@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from google.cloud import language_v1
 from google.cloud.language_v1.types.language_service import Sentiment
 from .models import Mood
-from mindjournal.settings import STATIC_ROOT, ACCOUNT_SID, AUTH_TOKEN
+from mindjournal.settings import STATIC_ROOT
 from twilio.rest import Client
 from datetime import datetime
 import json
@@ -50,7 +50,6 @@ def post(request):
                             pub_date=pub_date, sentiment=sentiment)
         now = datetime.now()
         dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-        print(ACCOUNT_SID, AUTH_TOKEN)
         print("date and time =", dt_string)
         client = Client('ACd79c6a204249ff859c65ace6bb1cf1a6',
                         '173c160353fbaebc3374949068b98b34')
