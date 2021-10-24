@@ -1,13 +1,11 @@
-import { Element } from "react-scroll";
-
 const Home = () => {
     return (
         <div className="container">
             {/*modal section*/}
             <section className="home">
-                <div class="hero-section">
-                    <div class="hero-1">
-                        <h1 class="hero-title">
+                <div className="hero-section">
+                    <div className="hero-1">
+                        <h1 className="hero-title">
                             Capture your thoughts/emotions frictionlessly!
                             <span className="dot">.</span>
                         </h1>
@@ -21,7 +19,7 @@ const Home = () => {
                             thoughts? here's why
                         </p>
                     </div>
-                    <div class="hero-illustration">
+                    <div className="hero-illustration">
                         <img src={"/illustration-1.png"} alt="ddd" />
                     </div>
                 </div>

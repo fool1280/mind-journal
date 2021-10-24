@@ -17,12 +17,6 @@ function App() {
                         <Demo />
                     </Route>
                 </Switch>
-
-                {/* <main className='main'>
-            <h1 className='title'>
-              Welcome to <a href='#'>Mind Journal!</a>
-            </h1>
-          </main> */}
             </div>
         </Router>
     );
