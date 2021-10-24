@@ -1,6 +1,5 @@
 from django.contrib import admin
 
-from .models import Mood, User
+from .models import Mood
 
 admin.site.register(Mood)
-admin.site.register(User)
