@@ -11,8 +11,10 @@ import os
 
 
 def get_sentiment(text_content):
+    # client = language_v1.LanguageServiceClient.from_service_account_json(
+    #     f"{STATIC_ROOT}/key.json")
     client = language_v1.LanguageServiceClient.from_service_account_json(
-        f"{STATIC_ROOT}/key.json")
+        "key.json")
     type_ = language_v1.Document.Type.PLAIN_TEXT
     language = "en"
     document = {"content": text_content, "type_": type_, "language": language}
