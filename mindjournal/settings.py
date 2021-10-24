@@ -17,9 +17,13 @@ import environ
 env = environ.Env()
 environ.Env.read_env()
 
-ACCOUNT_SID = os.environ['TWILIO_ACCOUNT_SID']
-AUTH_TOKEN = os.environ['TWILIO_AUTH_TOKEN']
-MONGODB_URI = os.environ['MONGODB_URI']
+# ACCOUNT_SID = os.environ['TWILIO_ACCOUNT_SID']
+# AUTH_TOKEN = os.environ['TWILIO_AUTH_TOKEN']
+# MONGODB_URI = os.environ['MONGODB_URI']
+
+ACCOUNT_SID = 'ACd79c6a204249ff859c65ace6bb1cf1a6'
+AUTH_TOKEN = '173c160353fbaebc3374949068b98b34'
+MONGODB_URI = 'mongodb+srv://anh:12345@cluster0.qaxvq.mongodb.net/mind-journal?retryWrites=true&w=majority'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
